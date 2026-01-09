@@ -247,6 +247,19 @@
       "fluency": "Professional working proficiency"
     }
   ],
+  "interests": [
+    {
+      "name": "Barista casero",
+      "keywords": ["V60", "Aeropress", "Espresso", "Cold Brew"]
+    },
+    {
+      "name": "Libros técnicos",
+      "keywords": ["The Pragmatic Programmer", "Clean Code", "Domain Modeling Made Functional", "Código Sostenible", "Desarrollo Ágil con TDD"]
+    },
+    {
+      "name": "Viajar"
+    }
+  ],
   "meta": {
     "version": "v1.0.0",
     "lastModified": "2025-01-09"
