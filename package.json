@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "keywords": [
+    "resume",
+    "jsonresume"
+  ],
   "author": "Miguel Ignacio Cabrera San Gil <miguelcabsan@gmail.com> (https://miguelcabrera.dev/)",
   "license": "ISC",
   "type": "commonjs",
   "scripts": {
-    "build:html": "resumed render -t jsonresume-theme-even -o resume.html",
-    "build:pdf": "resumed export -t jsonresume-theme-even -o resume.pdf",
-    "serve": "resumed serve -t jsonresume-theme-even"
+    "build:html": "mkdir -p dist && resumed render resume.json -t jsonresume-theme-dev-ats -o dist/index.html",
+    "build:pdf": "mkdir -p dist && resumed export resume.json -t jsonresume-theme-dev-ats -o dist/resume.pdf",
+    "serve": "npm run build:html && npx serve dist"
   },
   "dependencies": {
     "jsonresume-theme-dev-ats": "^1.0.1",
