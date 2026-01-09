@@ -6,7 +6,7 @@
     "image": "",
     "email": "miguelcabsan@gmail.com",
     "url": "https://miguelcabrera.dev",
-    "summary": "Passionate about new technologies and software development. I help teams adopt eXtreme Programming and Software Craftsmanship practices.",
+    "summary": "Senior Software Developer with 9+ years of experience. Passionate about new technologies, I help teams adopt eXtreme Programming and Software Craftsmanship practices. Specialized in technical training and AI-assisted development.",
     "location": {
       "city": "Santa Cruz de Tenerife",
       "countryCode": "ES",
@@ -17,6 +17,11 @@
         "network": "LinkedIn",
         "username": "miguel-cabrera-san-gil",
         "url": "https://www.linkedin.com/in/miguel-cabrera-san-gil/"
+      },
+      {
+        "network": "GitHub",
+        "username": "myugen",
+        "url": "https://github.com/myugen"
       }
     ]
   },
@@ -43,7 +48,7 @@
       "endDate": "2025-02-01",
       "summary": "Mentoring internal and external teams in technical growth. Working on international projects in maritime and cybersecurity sectors. Contributing to DevOps and CI/CD improvements.",
       "highlights": [
-        "Mentoring teams in XP and Software Craftsmanship practices",
+        "Mentored 10+ development teams in XP and Software Craftsmanship practices",
         "International projects in maritime and cybersecurity sectors",
         "DevOps and CI/CD improvements"
       ]
@@ -132,11 +137,22 @@
     {
       "name": "DevOps",
       "keywords": [
-        "Jenkins",
-        "GitLab CI",
+        "Docker",
         "Kubernetes",
         "Helm",
+        "Jenkins",
+        "GitLab CI",
         "JFrog"
+      ]
+    },
+    {
+      "name": "Testing",
+      "keywords": [
+        "JUnit",
+        "Kotest",
+        "pytest",
+        "Jest",
+        "Go testing"
       ]
     },
     {

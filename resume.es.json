@@ -6,7 +6,7 @@
     "image": "",
     "email": "miguelcabsan@gmail.com",
     "url": "https://miguelcabrera.dev",
-    "summary": "Apasionado de las nuevas tecnologías y el desarrollo de software. Ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship.",
+    "summary": "Senior Software Developer con más de 9 años de experiencia. Apasionado de las nuevas tecnologías, ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship. Especializado en formación técnica y desarrollo asistido por IA.",
     "location": {
       "city": "Santa Cruz de Tenerife",
       "countryCode": "ES",
@@ -17,6 +17,11 @@
         "network": "LinkedIn",
         "username": "miguel-cabrera-san-gil",
         "url": "https://www.linkedin.com/in/miguel-cabrera-san-gil/"
+      },
+      {
+        "network": "GitHub",
+        "username": "myugen",
+        "url": "https://github.com/myugen"
       }
     ]
   },
@@ -43,7 +48,7 @@
       "endDate": "2025-02-01",
       "summary": "Mentorización de equipos internos y externos en crecimiento técnico. Trabajo en proyectos internacionales en sectores marítimo y ciberseguridad. Contribución a mejoras de DevOps y CI/CD.",
       "highlights": [
-        "Mentoring de equipos en prácticas XP y Software Craftsmanship",
+        "Mentoring de más de 10 equipos en prácticas XP y Software Craftsmanship",
         "Proyectos internacionales en sectores marítimo y ciberseguridad",
         "Mejoras en DevOps y CI/CD"
       ]
@@ -132,11 +137,22 @@
     {
       "name": "DevOps",
       "keywords": [
-        "Jenkins",
-        "Gitlab CI",
+        "Docker",
         "Kubernetes",
         "Helm",
+        "Jenkins",
+        "GitLab CI",
         "JFrog"
+      ]
+    },
+    {
+      "name": "Testing",
+      "keywords": [
+        "JUnit",
+        "Kotest",
+        "pytest",
+        "Jest",
+        "Go testing"
       ]
     },
     {
