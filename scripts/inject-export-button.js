@@ -2,15 +2,61 @@ const fs = require('fs');
 const path = require('path');
 
 const languages = [
-  { code: 'en', htmlPath: 'dist/index.html', switchTo: 'ES', switchHref: '/es/' },
-  { code: 'es', htmlPath: 'dist/es/index.html', switchTo: 'EN', switchHref: '/' }
+  { code: 'en', htmlPath: 'dist/index.html', currentLabel: 'EN', otherLabel: 'ES', otherHref: '/es/' },
+  { code: 'es', htmlPath: 'dist/es/index.html', currentLabel: 'ES', otherLabel: 'EN', otherHref: '/' }
 ];
 
-function getExportButtonHTML(lang) {
+function getLanguageSwitcherHTML(lang) {
+  const enPart = lang.code === 'en'
+    ? '<span class="lang-current">EN</span>'
+    : '<a class="lang-link" href="/">EN</a>';
+  const esPart = lang.code === 'es'
+    ? '<span class="lang-current">ES</span>'
+    : '<a class="lang-link" href="/es/">ES</a>';
+
   return `
-<!-- Export Button & Language Switcher -->
+<!-- Language Switcher -->
+<div class="lang-switcher">${enPart} | ${esPart}</div>
+`;
+}
+
+function getLanguageSwitcherStyles() {
+  return `
+<style>
+.lang-switcher {
+  text-align: center;
+  margin: 0 0 8px 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+}
+
+.lang-current {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.lang-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.lang-link:hover {
+  text-decoration: underline;
+}
+
+@media print {
+  .lang-switcher {
+    display: none !important;
+  }
+}
+</style>
+`;
+}
+
+function getExportButtonHTML() {
+  return `
+<!-- Export Button -->
 <div class="controls export-controls">
-  <a class="lang-switch" href="${lang.switchHref}">${lang.switchTo}</a>
   <div class="export-dropdown">
     <button class="export-btn" onclick="toggleDropdown()">Export</button>
     <div class="export-menu" id="exportMenu">
@@ -27,28 +73,6 @@ function getExportButtonHTML(lang) {
   right: 48px;
   z-index: 1000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.lang-switch {
-  background: white;
-  color: #374151;
-  border: 2px solid #e5e7eb;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: all 0.2s;
-}
-
-.lang-switch:hover {
-  border-color: #2563eb;
-  color: #2563eb;
 }
 
 .export-dropdown {
@@ -142,12 +166,15 @@ languages.forEach(lang => {
 
   let html = fs.readFileSync(htmlPath, 'utf-8');
 
-  // Inject before closing </body> tag
-  html = html.replace('</body>', getExportButtonHTML(lang) + '\n</body>');
+  // Inject language switcher before <h1>
+  html = html.replace('<h1>', getLanguageSwitcherHTML(lang) + getLanguageSwitcherStyles() + '<h1>');
+
+  // Inject export button before closing </body> tag
+  html = html.replace('</body>', getExportButtonHTML() + '\n</body>');
 
   fs.writeFileSync(htmlPath, html);
 
-  console.log(`Export button injected for ${lang.code.toUpperCase()} version`);
+  console.log(`Injected for ${lang.code.toUpperCase()} version`);
 });
 
 console.log('All versions processed successfully');
