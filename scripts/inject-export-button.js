@@ -18,8 +18,8 @@ const exportButtonHTML = `
 <style>
 .export-controls {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 48px;
   z-index: 1000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
@@ -29,9 +29,9 @@ const exportButtonHTML = `
 }
 
 .export-btn {
-  background: #2563eb;
-  color: white;
-  border: none;
+  background: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
@@ -43,14 +43,16 @@ const exportButtonHTML = `
 
 .export-btn:hover {
   background: #1d4ed8;
+  color: white;
+  border-color: #1d4ed8;
 }
 
 .export-menu {
   display: none;
   position: absolute;
   right: 0;
-  top: 100%;
-  margin-top: 4px;
+  bottom: 100%;
+  margin-bottom: 4px;
   background: white;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
