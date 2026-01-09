@@ -1,164 +1,193 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Richard Hendriks",
-    "label": "Programmer",
+    "name": "Miguel Ignacio Cabrera San Gil",
+    "label": "Senior Software Developer",
     "image": "",
-    "email": "richard.hendriks@mail.com",
-    "phone": "(912) 555-4321",
-    "url": "http://richardhendricks.example.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "email": "miguelcabsan@gmail.com",
+    "url": "https://miguelcabrera.dev",
+    "summary": "Apasionado de las nuevas tecnologías y el desarrollo de software. Ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Santa Cruz de Tenerife",
+      "countryCode": "ES",
+      "region": "Canary Islands"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": "https://www.twitter.com"
-      },
-      {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.example.com/dandymusicnl"
+        "network": "LinkedIn",
+        "username": "miguel-cabrera-san-gil",
+        "url": "https://www.linkedin.com/in/miguel-cabrera-san-gil/"
       }
     ]
   },
   "work": [
     {
-      "name": "Pied Piper",
-      "location": "Palo Alto, CA",
-      "description": "Awesome compression company",
-      "position": "CEO/President",
-      "url": "http://piedpiper.example.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "name": "Lean Mind",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "position": "Lead Software Developer & Technical Consultant",
+      "url": "https://leanmind.es",
+      "startDate": "2025-02-01",
+      "summary": "Liderazgo técnico de equipos y formación en prácticas de desarrollo. Impartición de formaciones sobre TDD, XP, Refactoring y desarrollo asistido por agentes IA.",
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
+        "Liderazgo técnico de equipos de desarrollo",
+        "Formaciones en TDD, XP, Refactoring y desarrollo con agentes IA",
+        "Empoderamiento de equipos mediante capacitación técnica"
       ]
-    }
-  ],
-  "volunteer": [
+    },
     {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
+      "name": "Lean Mind",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "position": "Senior Software Developer & Technical Consultant",
+      "url": "https://leanmind.es",
+      "startDate": "2022-01-01",
+      "endDate": "2025-02-01",
+      "summary": "Mentorización de equipos internos y externos en crecimiento técnico. Trabajo en proyectos internacionales en sectores marítimo y ciberseguridad. Contribución a mejoras de DevOps y CI/CD.",
       "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Mentoring de equipos en prácticas XP y Software Craftsmanship",
+        "Proyectos internacionales en sectores marítimo y ciberseguridad",
+        "Mejoras en DevOps y CI/CD"
+      ]
+    },
+    {
+      "name": "System73",
+      "position": "Senior Backend Developer",
+      "startDate": "2021-05-01",
+      "endDate": "2021-12-01",
+      "summary": "Evolución de microservicios para gestión de métricas de producto. Mejora de procesos CI/CD.",
+      "highlights": [
+        "Desarrollo de microservicios en Go y Python",
+        "Mejora de pipelines CI/CD con Jenkins y Gitlab CI"
+      ]
+    },
+    {
+      "name": "Arte Consultores Tecnológicos",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "position": "Fullstack Developer",
+      "startDate": "2017-11-01",
+      "endDate": "2021-05-01",
+      "summary": "Liderazgo en desarrollo de software interno de reservas y gestión de eventos. Proyectos Open Data con ETL y datasets de administración pública. Modernización de aplicaciones del sector público.",
+      "highlights": [
+        "Desarrollo de software de reservas y gestión de eventos",
+        "Proyectos Open Data con ETL y datos de administración pública",
+        "Modernización de aplicaciones del sector público"
+      ]
+    },
+    {
+      "name": "Atos IT España",
+      "position": "Junior Fullstack Developer",
+      "startDate": "2016-05-01",
+      "endDate": "2017-11-01",
+      "summary": "Mantenimiento y evolución de software para cliente del sector oil & gas.",
+      "highlights": [
+        "Desarrollo con Java, Spring y Oracle",
+        "Mantenimiento de aplicaciones enterprise"
+      ]
+    },
+    {
+      "name": "CEDEI Fellowship Program",
+      "position": "Internship Fullstack Developer",
+      "startDate": "2016-03-01",
+      "endDate": "2016-05-01",
+      "summary": "Participación en desarrollo de proyectos de formación.",
+      "highlights": [
+        "Desarrollo con Java, Spring y Primefaces"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "score": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
+      "institution": "CIFP César Manrique",
+      "area": "Desarrollo de Aplicaciones Web",
+      "studyType": "Técnico Superior en Desarrollo de Aplicaciones Web",
+      "startDate": "2012-01-01",
+      "endDate": "2016-01-01"
+    },
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "institution": "Universidad de La Laguna",
+      "area": "Ingeniería Técnica Informática de Sistemas",
+      "studyType": "Ingeniería Técnica Informática de Sistemas (Sin finalizar)",
+      "startDate": "2005-01-01",
+      "endDate": "2011-01-01"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Backend",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "Kotlin",
+        "Java",
+        "Spring",
+        "Go",
+        "Python"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Frontend",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "React",
+        "Angular",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Jenkins",
+        "Gitlab CI",
+        "Kubernetes",
+        "Helm",
+        "JFrog"
+      ]
+    },
+    {
+      "name": "Practices",
+      "keywords": [
+        "TDD",
+        "Pair Programming",
+        "XP",
+        "Clean Architecture",
+        "DDD",
+        "Refactoring"
+      ]
+    },
+    {
+      "name": "AI & Agents",
+      "keywords": [
+        "Agent-Assisted Development",
+        "LLMs",
+        "Prompt Engineering",
+        "AI Tooling"
+      ]
+    },
+    {
+      "name": "Leadership & Training",
+      "keywords": [
+        "Technical Leadership",
+        "Team Empowerment",
+        "Training",
+        "Mentoring"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "PostgreSQL",
+        "Oracle"
       ]
     }
   ],
   "languages": [
     {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
       "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ],
-  "projects": [
-    {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
-      "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
-      ],
-      "keywords": [
-        "GoogleMaps",
-        "Chrome Extension",
-        "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "http://missdirection.example.com",
-      "roles": [
-        "Team lead",
-        "Designer"
-      ],
-      "entity": "Smoogle",
-      "type": "application"
+      "fluency": "Professional working proficiency"
     }
   ],
   "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2025-01-09"
   }
 }
