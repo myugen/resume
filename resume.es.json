@@ -115,6 +115,49 @@
       "endDate": "2011-01-01"
     }
   ],
+  "volunteer": [
+    {
+      "organization": "Agile & Craftsmanship Canarias",
+      "position": "Miembro de la comunidad",
+      "startDate": "2022-01-01",
+      "endDate": "2024-03-15",
+      "summary": "Miembro activo de la comunidad local de software craftsmanship y agile. Impartí charlas y talleres sobre XP, TDD y arquitecturas limpias."
+    }
+  ],
+  "projects": [
+    {
+      "name": "PairBoard",
+      "description": "Producto SaaS para mejorar los emparejamientos en pair programming, considerando silos de conocimiento y bus factor. (En desarrollo)",
+      "highlights": [
+        "Domain-Driven Design (DDD)",
+        "Arquitectura event-driven con patrón CQRS",
+        "Procesamiento de trabajos en background con Oban"
+      ],
+      "keywords": [
+        "Elixir",
+        "Phoenix",
+        "Commanded",
+        "Oban",
+        "PostgreSQL"
+      ],
+      "type": "application"
+    },
+    {
+      "name": "Monads",
+      "description": "Librería de mónadas de programación funcional para TypeScript/JavaScript.",
+      "highlights": [
+        "Mónadas Result, Option y Either",
+        "Librería open source publicada en npm"
+      ],
+      "keywords": [
+        "TypeScript",
+        "JavaScript",
+        "Functional Programming"
+      ],
+      "url": "https://github.com/lean-mind/monads",
+      "type": "library"
+    }
+  ],
   "skills": [
     {
       "name": "Backend",
@@ -123,7 +166,9 @@
         "Java",
         "Spring",
         "Go",
-        "Python"
+        "Python",
+        "Elixir",
+        "Phoenix"
       ]
     },
     {
