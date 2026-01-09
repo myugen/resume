@@ -1,18 +1,20 @@
 const fs = require('fs');
 const path = require('path');
 
+const BASE_PATH = process.env.BASE_PATH ? `/${process.env.BASE_PATH}` : '';
+
 const languages = [
-  { code: 'en', htmlPath: 'dist/index.html', currentLabel: 'EN', otherLabel: 'ES', otherHref: '/es/' },
-  { code: 'es', htmlPath: 'dist/es/index.html', currentLabel: 'ES', otherLabel: 'EN', otherHref: '/' }
+  { code: 'en', htmlPath: 'dist/index.html' },
+  { code: 'es', htmlPath: 'dist/es/index.html' }
 ];
 
 function getLanguageSwitcherHTML(lang) {
   const enPart = lang.code === 'en'
     ? '<span class="lang-current">EN</span>'
-    : '<a class="lang-link" href="/">EN</a>';
+    : `<a class="lang-link" href="${BASE_PATH}/">EN</a>`;
   const esPart = lang.code === 'es'
     ? '<span class="lang-current">ES</span>'
-    : '<a class="lang-link" href="/es/">ES</a>';
+    : `<a class="lang-link" href="${BASE_PATH}/es/">ES</a>`;
 
   return `
 <!-- Language Switcher -->
