@@ -24,9 +24,13 @@ npm run build:pdf
 
 ## Architecture
 
-- **resume.json**: The main resume data file following the JSON Resume schema. Edit this file to update resume content.
-- **dist/**: Build output directory containing rendered HTML and PDF files.
-- **Theme**: Uses `jsonresume-theme-dev-ats` for rendering (ATS-friendly theme). Theme can be changed by modifying the `-t` flag in package.json scripts.
+- **resume.en.json**: English version of the resume (default, served at `/`).
+- **resume.es.json**: Spanish version of the resume (served at `/es/`).
+- **dist/**: Build output directory:
+  - `dist/index.html` - English version
+  - `dist/es/index.html` - Spanish version
+- **scripts/inject-export-button.js**: Post-build script that injects export button and language switcher.
+- **Theme**: Uses `jsonresume-theme-dev-ats` for rendering (ATS-friendly theme).
 
 ## Node Version
 
@@ -34,4 +38,4 @@ Requires Node.js v24.11.1 (specified in `.nvmrc`).
 
 ## Deployment
 
-GitHub Actions deploys automáticamente a GitHub Pages cuando cambia `resume.json`, `package.json` o `package-lock.json` en la rama `main`.
+GitHub Actions deploys automatically to GitHub Pages when `resume.en.json`, `resume.es.json`, `package.json`, `package-lock.json`, or `scripts/**` change on the `main` branch.
