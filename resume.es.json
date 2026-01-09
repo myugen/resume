@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Miguel Ignacio Cabrera San Gil",
-    "label": "Senior Software Developer",
+    "label": "Lead Software Developer",
     "image": "",
     "email": "miguelcabsan@gmail.com",
     "url": "https://miguelcabrera.dev",
-    "summary": "Senior Software Developer con más de 9 años de experiencia. Apasionado de las nuevas tecnologías, ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship. Especializado en formación técnica y desarrollo asistido por IA.",
+    "summary": "Desarrollador de software con más de 9 años de experiencia. Apasionado de las nuevas tecnologías, ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship. Especializado en formación técnica y desarrollo asistido por IA.",
     "location": {
       "city": "Santa Cruz de Tenerife",
       "countryCode": "ES",

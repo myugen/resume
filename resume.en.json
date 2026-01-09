@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Miguel Ignacio Cabrera San Gil",
-    "label": "Senior Software Developer",
+    "label": "Lead Software Developer",
     "image": "",
     "email": "miguelcabsan@gmail.com",
     "url": "https://miguelcabrera.dev",
-    "summary": "Senior Software Developer with 9+ years of experience. Passionate about new technologies, I help teams adopt eXtreme Programming and Software Craftsmanship practices. Specialized in technical training and AI-assisted development.",
+    "summary": "Software Developer with 9+ years of experience. Passionate about new technologies, I help teams adopt eXtreme Programming and Software Craftsmanship practices. Specialized in technical training and AI-assisted development.",
     "location": {
       "city": "Santa Cruz de Tenerife",
       "countryCode": "ES",
