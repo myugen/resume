@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Miguel Ignacio Cabrera San Gil <miguelcabsan@gmail.com> (https://miguelcabrera.dev/)",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "build:html": "resumed render -t jsonresume-theme-even -o resume.html",
+    "build:pdf": "resumed export -t jsonresume-theme-even -o resume.pdf",
+    "serve": "resumed serve -t jsonresume-theme-even"
+  },
+  "dependencies": {
+    "jsonresume-theme-dev-ats": "^1.0.1",
+    "resumed": "^6.1.0"
+  }
+}
