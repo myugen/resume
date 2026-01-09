@@ -1,11 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 
-const htmlPath = path.join(__dirname, '..', 'dist', 'index.html');
+const languages = [
+  { code: 'en', htmlPath: 'dist/index.html', switchTo: 'ES', switchHref: '/es/' },
+  { code: 'es', htmlPath: 'dist/es/index.html', switchTo: 'EN', switchHref: '/' }
+];
 
-const exportButtonHTML = `
-<!-- Export Button -->
+function getExportButtonHTML(lang) {
+  return `
+<!-- Export Button & Language Switcher -->
 <div class="controls export-controls">
+  <a class="lang-switch" href="${lang.switchHref}">${lang.switchTo}</a>
   <div class="export-dropdown">
     <button class="export-btn" onclick="toggleDropdown()">Export</button>
     <div class="export-menu" id="exportMenu">
@@ -22,6 +27,28 @@ const exportButtonHTML = `
   right: 48px;
   z-index: 1000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switch {
+  background: white;
+  color: #374151;
+  border: 2px solid #e5e7eb;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.lang-switch:hover {
+  border-color: #2563eb;
+  color: #2563eb;
 }
 
 .export-dropdown {
@@ -103,12 +130,24 @@ document.addEventListener('click', function(e) {
 });
 </script>
 `;
+}
 
-let html = fs.readFileSync(htmlPath, 'utf-8');
+languages.forEach(lang => {
+  const htmlPath = path.join(__dirname, '..', lang.htmlPath);
 
-// Inject before closing </body> tag
-html = html.replace('</body>', exportButtonHTML + '\n</body>');
+  if (!fs.existsSync(htmlPath)) {
+    console.log(`Skipping ${lang.code}: ${htmlPath} not found`);
+    return;
+  }
 
-fs.writeFileSync(htmlPath, html);
+  let html = fs.readFileSync(htmlPath, 'utf-8');
 
-console.log('Export button injected successfully');
+  // Inject before closing </body> tag
+  html = html.replace('</body>', getExportButtonHTML(lang) + '\n</body>');
+
+  fs.writeFileSync(htmlPath, html);
+
+  console.log(`Export button injected for ${lang.code.toUpperCase()} version`);
+});
+
+console.log('All versions processed successfully');

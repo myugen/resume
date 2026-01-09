@@ -1,0 +1,193 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Miguel Ignacio Cabrera San Gil",
+    "label": "Senior Software Developer",
+    "image": "",
+    "email": "miguelcabsan@gmail.com",
+    "url": "https://miguelcabrera.dev",
+    "summary": "Passionate about new technologies and software development. I help teams adopt eXtreme Programming and Software Craftsmanship practices.",
+    "location": {
+      "city": "Santa Cruz de Tenerife",
+      "countryCode": "ES",
+      "region": "Canary Islands"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "miguel-cabrera-san-gil",
+        "url": "https://www.linkedin.com/in/miguel-cabrera-san-gil/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Lean Mind",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "position": "Lead Software Developer & Technical Consultant",
+      "url": "https://leanmind.es",
+      "startDate": "2025-02-01",
+      "summary": "Technical leadership of teams and training in development practices. Delivering training on TDD, XP, Refactoring and AI-assisted development.",
+      "highlights": [
+        "Technical leadership of development teams",
+        "Training in TDD, XP, Refactoring and AI agent-assisted development",
+        "Team empowerment through technical training"
+      ]
+    },
+    {
+      "name": "Lean Mind",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "position": "Senior Software Developer & Technical Consultant",
+      "url": "https://leanmind.es",
+      "startDate": "2022-01-01",
+      "endDate": "2025-02-01",
+      "summary": "Mentoring internal and external teams in technical growth. Working on international projects in maritime and cybersecurity sectors. Contributing to DevOps and CI/CD improvements.",
+      "highlights": [
+        "Mentoring teams in XP and Software Craftsmanship practices",
+        "International projects in maritime and cybersecurity sectors",
+        "DevOps and CI/CD improvements"
+      ]
+    },
+    {
+      "name": "System73",
+      "position": "Senior Backend Developer",
+      "startDate": "2021-05-01",
+      "endDate": "2021-12-01",
+      "summary": "Evolution of microservices for product metrics management. CI/CD process improvements.",
+      "highlights": [
+        "Microservices development in Go and Python",
+        "CI/CD pipeline improvements with Jenkins and GitLab CI"
+      ]
+    },
+    {
+      "name": "Arte Consultores Tecnologicos",
+      "location": "Santa Cruz de Tenerife, Spain",
+      "position": "Fullstack Developer",
+      "startDate": "2017-11-01",
+      "endDate": "2021-05-01",
+      "summary": "Leading development of internal booking and event management software. Open Data projects with ETL and public administration datasets. Modernization of public sector applications.",
+      "highlights": [
+        "Development of booking and event management software",
+        "Open Data projects with ETL and public administration data",
+        "Modernization of public sector applications"
+      ]
+    },
+    {
+      "name": "Atos IT Spain",
+      "position": "Junior Fullstack Developer",
+      "startDate": "2016-05-01",
+      "endDate": "2017-11-01",
+      "summary": "Maintenance and evolution of software for oil & gas sector client.",
+      "highlights": [
+        "Development with Java, Spring and Oracle",
+        "Enterprise application maintenance"
+      ]
+    },
+    {
+      "name": "CEDEI Fellowship Program",
+      "position": "Internship Fullstack Developer",
+      "startDate": "2016-03-01",
+      "endDate": "2016-05-01",
+      "summary": "Participation in training project development.",
+      "highlights": [
+        "Development with Java, Spring and Primefaces"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "CIFP Cesar Manrique",
+      "area": "Web Application Development",
+      "studyType": "Higher Technician in Web Application Development",
+      "startDate": "2012-01-01",
+      "endDate": "2016-01-01"
+    },
+    {
+      "institution": "Universidad de La Laguna",
+      "area": "Computer Systems Engineering",
+      "studyType": "Computer Systems Engineering (Not completed)",
+      "startDate": "2005-01-01",
+      "endDate": "2011-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Backend",
+      "keywords": [
+        "Kotlin",
+        "Java",
+        "Spring",
+        "Go",
+        "Python"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "keywords": [
+        "React",
+        "Angular",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Jenkins",
+        "GitLab CI",
+        "Kubernetes",
+        "Helm",
+        "JFrog"
+      ]
+    },
+    {
+      "name": "Practices",
+      "keywords": [
+        "TDD",
+        "Pair Programming",
+        "XP",
+        "Clean Architecture",
+        "DDD",
+        "Refactoring"
+      ]
+    },
+    {
+      "name": "AI & Agents",
+      "keywords": [
+        "Agent-Assisted Development",
+        "LLMs",
+        "Prompt Engineering",
+        "AI Tooling"
+      ]
+    },
+    {
+      "name": "Leadership & Training",
+      "keywords": [
+        "Technical Leadership",
+        "Team Empowerment",
+        "Training",
+        "Mentoring"
+      ]
+    },
+    {
+      "name": "Databases",
+      "keywords": [
+        "PostgreSQL",
+        "Oracle"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "lastModified": "2025-01-09"
+  }
+}

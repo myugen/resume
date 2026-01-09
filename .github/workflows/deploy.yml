@@ -4,9 +4,11 @@ on:
   push:
     branches: [main]
     paths:
-      - resume.json
+      - resume.en.json
+      - resume.es.json
       - package.json
       - package-lock.json
+      - scripts/**
   workflow_dispatch:
 
 permissions:
