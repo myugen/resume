@@ -11,7 +11,9 @@
   "license": "ISC",
   "type": "commonjs",
   "scripts": {
-    "build:html": "mkdir -p dist/es && resumed render resume.en.json -t jsonresume-theme-dev-ats -o dist/index.html && resumed render resume.es.json -t jsonresume-theme-dev-ats -o dist/es/index.html && node scripts/inject-export-button.js",
+    "build:html:en": "mkdir -p dist && resumed render resume.en.json -t jsonresume-theme-dev-ats -o dist/index.html",
+    "build:html:es": "mkdir -p dist/es && resumed render resume.es.json -t jsonresume-theme-dev-ats -o dist/es/index.html",
+    "build:html": "npm run build:html:en && npm run build:html:es && node scripts/inject-controls.js",
     "build:pdf": "mkdir -p dist && resumed export resume.en.json -t jsonresume-theme-dev-ats -o dist/resume.pdf",
     "serve": "npm run build:html && npx serve dist"
   },

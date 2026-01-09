@@ -29,7 +29,7 @@ npm run build:pdf
 - **dist/**: Build output directory:
   - `dist/index.html` - English version
   - `dist/es/index.html` - Spanish version
-- **scripts/inject-export-button.js**: Post-build script that injects export button and language switcher.
+- **scripts/inject-controls.js**: Post-build script that injects language switcher and export button.
 - **Theme**: Uses `jsonresume-theme-dev-ats` for rendering (ATS-friendly theme).
 
 ## Node Version
