@@ -4,8 +4,8 @@ const path = require('path');
 const BASE_PATH = process.env.BASE_PATH ? `/${process.env.BASE_PATH}` : '';
 
 const languages = [
-  { code: 'en', htmlPath: 'dist/index.html' },
-  { code: 'es', htmlPath: 'dist/es/index.html' }
+  { code: 'en', htmlPath: 'dist/index.html', pdfName: 'miguel-cabrera_cv_en.pdf' },
+  { code: 'es', htmlPath: 'dist/es/index.html', pdfName: 'miguel-cabrera_cv_es.pdf' }
 ];
 
 function getLanguageSwitcherHTML(lang) {
@@ -55,7 +55,7 @@ function getLanguageSwitcherStyles() {
 `;
 }
 
-function getExportButtonHTML() {
+function getExportButtonHTML(pdfName) {
   return `
 <!-- Export Button -->
 <div class="controls export-controls">
@@ -63,7 +63,7 @@ function getExportButtonHTML() {
     <button class="export-btn" onclick="toggleDropdown()">Export</button>
     <div class="export-menu" id="exportMenu">
       <button onclick="window.print()">Print / Save as PDF</button>
-      <a href="resume.pdf" download>Download PDF</a>
+      <a href="${pdfName}" download>Download PDF</a>
     </div>
   </div>
 </div>
@@ -172,7 +172,7 @@ languages.forEach(lang => {
   html = html.replace('<h1>', getLanguageSwitcherHTML(lang) + getLanguageSwitcherStyles() + '<h1>');
 
   // Inject export button before closing </body> tag
-  html = html.replace('</body>', getExportButtonHTML() + '\n</body>');
+  html = html.replace('</body>', getExportButtonHTML(lang.pdfName) + '\n</body>');
 
   fs.writeFileSync(htmlPath, html);
 

@@ -19,13 +19,24 @@ npm run serve
 | `resume.en.json` | CV en inglés (por defecto en `/`) |
 | `resume.es.json` | CV en español (en `/es/`) |
 
+## Output
+
+| Idioma | HTML | PDF |
+|--------|------|-----|
+| EN | `dist/index.html` | `dist/miguel-cabrera_cv_en.pdf` |
+| ES | `dist/es/index.html` | `dist/es/miguel-cabrera_cv_es.pdf` |
+
 ## Comandos
 
 | Comando | Descripción |
 |---------|-------------|
 | `npm run serve` | Construye y sirve el CV localmente |
-| `npm run build:html` | Genera `dist/index.html` (EN) y `dist/es/index.html` (ES) |
-| `npm run build:pdf` | Genera `dist/resume.pdf` |
+| `npm run build:html` | Genera HTML para ambos idiomas |
+| `npm run build:html:en` | Genera solo HTML en inglés |
+| `npm run build:html:es` | Genera solo HTML en español |
+| `npm run build:pdf` | Genera PDF para ambos idiomas |
+| `npm run build:pdf:en` | Genera solo PDF en inglés |
+| `npm run build:pdf:es` | Genera solo PDF en español |
 
 ## Despliegue
 

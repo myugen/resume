@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a JSON Resume project that uses the `resumed` CLI to render a resume from `resume.json` into HTML and PDF formats. The resume follows the JSON Resume schema (v1.0.0).
+This is a JSON Resume project that uses the `resumed` CLI to render a multilingual resume (EN/ES) into HTML and PDF formats. The resume follows the JSON Resume schema (v1.0.0).
 
 ## Commands
 
@@ -27,10 +27,13 @@ npm run build:pdf
 - **resume.en.json**: English version of the resume (default, served at `/`).
 - **resume.es.json**: Spanish version of the resume (served at `/es/`).
 - **dist/**: Build output directory:
-  - `dist/index.html` - English version
-  - `dist/es/index.html` - Spanish version
+  - `dist/index.html` - English HTML
+  - `dist/miguel-cabrera_cv_en.pdf` - English PDF
+  - `dist/es/index.html` - Spanish HTML
+  - `dist/es/miguel-cabrera_cv_es.pdf` - Spanish PDF
 - **scripts/inject-controls.js**: Post-build script that injects language switcher and export button.
 - **Theme**: Uses `jsonresume-theme-dev-ats` for rendering (ATS-friendly theme).
+- **puppeteer**: Used for PDF generation.
 
 ## Node Version
 

@@ -37,6 +37,8 @@ jobs:
         env:
           BASE_PATH: resume
 
+      - run: npm run build:pdf
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
