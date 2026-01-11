@@ -1,80 +1,80 @@
 # Resume
 
-CV en formato [JSON Resume](https://jsonresume.org/) con soporte multiidioma y despliegue automático a GitHub Pages.
+CV in [JSON Resume](https://jsonresume.org/) format with multilingual support and automatic deployment to GitHub Pages.
 
-## Desarrollo local
+## Local Development
 
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Construir y servir localmente
+# Build and serve locally
 npm run serve
 
-# Construir todo (HTML, PDF, JSON)
+# Build everything (HTML, PDF, JSON)
 npm run build
 ```
 
-## Configuración
+## Configuration
 
-El proyecto usa variables de entorno. Copia `.env.example` a `.env` para desarrollo local:
+The project uses environment variables. Copy `.env.example` to `.env` for local development:
 
-| Variable | Descripción | Default |
+| Variable | Description | Default |
 |----------|-------------|---------|
-| `BASE_PATH` | Ruta base para GitHub Pages | `''` |
-| `CV_NAME` | Nombre en formato slug (ej: `john-doe`) | `john-doe` |
-| `LANGUAGES` | Idiomas soportados (separados por coma) | `en,es` |
+| `BASE_PATH` | Base path for GitHub Pages | `''` |
+| `CV_NAME` | Name in slug format (e.g., `john-doe`) | `john-doe` |
+| `LANGUAGES` | Supported languages (comma-separated) | `en,es` |
 
-Los PDFs se generan como `{CV_NAME}_cv_{lang}.pdf`.
+PDFs are generated as `{CV_NAME}_cv_{lang}.pdf`.
 
-## Estructura
+## Structure
 
-| Archivo | Descripción |
-|---------|-------------|
-| `config.js` | Configuración centralizada |
-| `resume.{lang}.json` | CV en el idioma especificado |
-| `.env.example` | Ejemplo de configuración |
+| File | Description |
+|------|-------------|
+| `config.js` | Centralized configuration |
+| `resume.{lang}.json` | CV in the specified language |
+| `.env.example` | Configuration example |
 
 ## Output
 
-El primer idioma en `LANGUAGES` se sirve en la raíz (`/`), los demás en subdirectorios (`/{lang}/`).
+The first language in `LANGUAGES` is served at root (`/`), others in subdirectories (`/{lang}/`).
 
-| Archivo | Descripción |
+| File | Description |
+|------|-------------|
+| `dist/index.html` | Default language HTML |
+| `dist/{name}_cv_{lang}.pdf` | Default language PDF |
+| `dist/content.json` | Default language JSON |
+| `dist/{lang}/...` | Other language files |
+
+## Commands
+
+| Command | Description |
 |---------|-------------|
-| `dist/index.html` | HTML del idioma por defecto |
-| `dist/{author}_cv_{lang}.pdf` | PDF del idioma por defecto |
-| `dist/content.json` | JSON del idioma por defecto |
-| `dist/{lang}/...` | Archivos de otros idiomas |
+| `npm run serve` | Build and serve CV locally |
+| `npm run build` | Build everything (HTML, PDF, JSON) |
+| `npm run build:html` | Generate HTML for all languages |
+| `npm run build:pdf` | Generate PDF for all languages |
+| `npm run build:json` | Copy JSON for all languages |
 
-## Comandos
+## Customize for Your Fork
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm run serve` | Construye y sirve el CV localmente |
-| `npm run build` | Construye todo (HTML, PDF, JSON) |
-| `npm run build:html` | Genera HTML para todos los idiomas |
-| `npm run build:pdf` | Genera PDF para todos los idiomas |
-| `npm run build:json` | Copia JSON para todos los idiomas |
+1. Create your `resume.{lang}.json` files
+2. Configure variables in GitHub:
+   - Go to **Settings** → **Secrets and variables** → **Actions** → **Variables**
+   - Create the following repository variables:
 
-## Personalizar para tu fork
-
-1. Crea tus archivos `resume.{lang}.json`
-2. Configura las variables en GitHub:
-   - Ve a **Settings** → **Secrets and variables** → **Actions** → **Variables**
-   - Crea las siguientes variables de repositorio:
-
-   | Variable | Descripción | Ejemplo |
+   | Variable | Description | Example |
    |----------|-------------|---------|
-   | `BASE_PATH` | Nombre de tu repositorio | `resume` |
-   | `CV_NAME` | Tu nombre en formato slug | `john-doe` |
-   | `LANGUAGES` | Idiomas separados por coma | `en,es` |
+   | `BASE_PATH` | Your repository name | `resume` |
+   | `CV_NAME` | Your name in slug format | `john-doe` |
+   | `LANGUAGES` | Languages comma-separated | `en,es` |
 
-3. Habilita GitHub Pages:
-   - Ve a **Settings** → **Pages**
-   - En **Source**, selecciona **GitHub Actions**
+3. Enable GitHub Pages:
+   - Go to **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
 
-4. Haz push y GitHub Pages se desplegará automáticamente
+4. Push and GitHub Pages will deploy automatically
 
-## Despliegue
+## Deployment
 
-El CV se despliega automáticamente a GitHub Pages cuando se hace push a `main` con cambios en `resume.*.json`, `config.js` o `scripts/`.
+The CV deploys automatically to GitHub Pages when pushing to `main` with changes in `resume.*.json`, `config.js`, or `scripts/`.
