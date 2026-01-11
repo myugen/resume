@@ -15,6 +15,9 @@
     "build:html:es": "mkdir -p dist/es && resumed render resume.es.json -t jsonresume-theme-dev-ats -o dist/es/index.html",
     "build:html": "npm run build:html:en && npm run build:html:es && node scripts/inject-controls.js",
     "build:pdf": "node scripts/build-pdf.js",
+    "build:json:en": "cp resume.en.json dist/content.json",
+    "build:json:es": "cp resume.es.json dist/es/content.json",
+    "build:json": "npm run build:json:en && npm run build:json:es",
     "serve": "npm run build:html && npx serve dist"
   },
   "dependencies": {

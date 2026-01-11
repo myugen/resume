@@ -42,10 +42,7 @@ jobs:
 
       - run: npm run build:pdf
 
-      - name: Copy JSON files for export
-        run: |
-          cp resume.en.json dist/content.json
-          cp resume.es.json dist/es/content.json
+      - run: npm run build:json
 
       - uses: actions/upload-pages-artifact@v3
         with:
