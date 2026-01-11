@@ -1,24 +1,28 @@
 const fs = require('fs');
 const path = require('path');
+const config = require('../config');
 
-const BASE_PATH = process.env.BASE_PATH ? `/${process.env.BASE_PATH}` : '';
+const BASE_PATH = config.basePath ? `/${config.basePath}` : '';
 
-const languages = [
-  { code: 'en', htmlPath: 'dist/index.html', pdfName: 'miguel-cabrera_cv_en.pdf', jsonName: 'content.json' },
-  { code: 'es', htmlPath: 'dist/es/index.html', pdfName: 'miguel-cabrera_cv_es.pdf', jsonName: 'content.json' }
-];
+const languages = config.languages.map(code => ({
+  code,
+  htmlPath: config.getHtmlPath(code),
+  pdfName: config.getPdfName(code),
+  jsonName: 'content.json'
+}));
 
-function getLanguageSwitcherHTML(lang) {
-  const enPart = lang.code === 'en'
-    ? '<span class="lang-current">EN</span>'
-    : `<a class="lang-link" href="${BASE_PATH}/">EN</a>`;
-  const esPart = lang.code === 'es'
-    ? '<span class="lang-current">ES</span>'
-    : `<a class="lang-link" href="${BASE_PATH}/es/">ES</a>`;
+function getLanguageSwitcherHTML(currentLang) {
+  const parts = languages.map(lang => {
+    const langPath = lang.code === config.languages[0] ? '/' : `/${lang.code}/`;
+    if (lang.code === currentLang.code) {
+      return `<span class="lang-current">${lang.code.toUpperCase()}</span>`;
+    }
+    return `<a class="lang-link" href="${BASE_PATH}${langPath}">${lang.code.toUpperCase()}</a>`;
+  });
 
   return `
 <!-- Language Switcher -->
-<div class="lang-switcher">${enPart} | ${esPart}</div>
+<div class="lang-switcher">${parts.join(' | ')}</div>
 `;
 }
 

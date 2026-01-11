@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
+const config = require('../config');
 
 async function buildPDF(htmlPath, outputPath) {
   const absoluteHtmlPath = path.resolve(htmlPath);
@@ -53,13 +54,13 @@ async function buildPDF(htmlPath, outputPath) {
 }
 
 async function main() {
-  const configs = [
-    { html: 'dist/index.html', pdf: 'dist/miguel-cabrera_cv_en.pdf' },
-    { html: 'dist/es/index.html', pdf: 'dist/es/miguel-cabrera_cv_es.pdf' }
-  ];
+  const configs = config.languages.map(lang => ({
+    html: config.getHtmlPath(lang),
+    pdf: config.getPdfPath(lang)
+  }));
 
-  for (const config of configs) {
-    await buildPDF(config.html, config.pdf);
+  for (const c of configs) {
+    await buildPDF(c.html, c.pdf);
   }
 }
 

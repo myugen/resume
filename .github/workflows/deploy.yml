@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - resume.en.json
-      - resume.es.json
+      - resume.*.json
+      - config.js
       - package.json
       - package-lock.json
       - scripts/**
@@ -36,13 +36,12 @@ jobs:
       - name: Install Chrome dependencies
         run: npx puppeteer browsers install chrome
 
-      - run: npm run build:html
+      - name: Build resume
+        run: npm run build
         env:
-          BASE_PATH: resume
-
-      - run: npm run build:pdf
-
-      - run: npm run build:json
+          BASE_PATH: ${{ vars.BASE_PATH }}
+          CV_NAME: ${{ vars.CV_NAME }}
+          LANGUAGES: ${{ vars.LANGUAGES }}
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -11,18 +11,18 @@
   "license": "ISC",
   "type": "commonjs",
   "scripts": {
-    "build:html:en": "mkdir -p dist && resumed render resume.en.json -t jsonresume-theme-dev-ats -o dist/index.html",
-    "build:html:es": "mkdir -p dist/es && resumed render resume.es.json -t jsonresume-theme-dev-ats -o dist/es/index.html",
-    "build:html": "npm run build:html:en && npm run build:html:es && node scripts/inject-controls.js",
+    "build:html": "node scripts/build-html.js",
     "build:pdf": "node scripts/build-pdf.js",
-    "build:json:en": "cp resume.en.json dist/content.json",
-    "build:json:es": "cp resume.es.json dist/es/content.json",
-    "build:json": "npm run build:json:en && npm run build:json:es",
+    "build:json": "node scripts/build-json.js",
+    "build": "npm run build:html && npm run build:pdf && npm run build:json",
     "serve": "npm run build:html && npx serve dist"
   },
   "dependencies": {
     "jsonresume-theme-dev-ats": "^1.0.1",
     "puppeteer": "^24.34.0",
     "resumed": "^6.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
   }
 }

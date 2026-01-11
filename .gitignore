@@ -31,3 +31,7 @@ coverage/
 # Cache
 .cache/
 .npm/
+
+# Dotenv
+.env*
+!.env.example
