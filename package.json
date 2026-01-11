@@ -14,9 +14,7 @@
     "build:html:en": "mkdir -p dist && resumed render resume.en.json -t jsonresume-theme-dev-ats -o dist/index.html",
     "build:html:es": "mkdir -p dist/es && resumed render resume.es.json -t jsonresume-theme-dev-ats -o dist/es/index.html",
     "build:html": "npm run build:html:en && npm run build:html:es && node scripts/inject-controls.js",
-    "build:pdf:en": "mkdir -p dist && resumed export resume.en.json -t jsonresume-theme-dev-ats -o dist/miguel-cabrera_cv_en.pdf",
-    "build:pdf:es": "mkdir -p dist/es && resumed export resume.es.json -t jsonresume-theme-dev-ats -o dist/es/miguel-cabrera_cv_es.pdf",
-    "build:pdf": "npm run build:pdf:en && npm run build:pdf:es",
+    "build:pdf": "node scripts/build-pdf.js",
     "serve": "npm run build:html && npx serve dist"
   },
   "dependencies": {
