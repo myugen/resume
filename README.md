@@ -1,5 +1,7 @@
 # Resume
 
+*[Leer en español](README_es.md)*
+
 CV in [JSON Resume](https://jsonresume.org/) format with multilingual support and automatic deployment to GitHub Pages.
 
 ## Local Development
