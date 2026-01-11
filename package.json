@@ -1,14 +1,20 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Multilingual JSON Resume with automatic deployment to GitHub Pages",
   "keywords": [
     "resume",
-    "jsonresume"
+    "jsonresume",
+    "cv",
+    "multilingual",
+    "github-pages"
   ],
   "author": "Miguel Ignacio Cabrera San Gil <miguelcabsan@gmail.com> (https://miguelcabrera.dev/)",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myugen/resume.git"
+  },
   "type": "commonjs",
   "scripts": {
     "build:html": "node scripts/build-html.js",
