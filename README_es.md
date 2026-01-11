@@ -27,7 +27,8 @@ El proyecto usa variables de entorno. Copia `.env.example` a `.env` para desarro
 | `CV_NAME` | Nombre en formato slug (ej: `john-doe`) | `john-doe` |
 | `LANGUAGES` | Idiomas soportados (separados por coma) | `en,es` |
 
-Los PDFs se generan como `{CV_NAME}_cv_{lang}.pdf`.
+> [!TIP]
+> Los PDFs se generan como `{CV_NAME}_cv_{lang}.pdf`.
 
 ## 📁 Estructura
 
@@ -39,7 +40,8 @@ Los PDFs se generan como `{CV_NAME}_cv_{lang}.pdf`.
 
 ## 📦 Output
 
-El primer idioma en `LANGUAGES` se sirve en la raíz (`/`), los demás en subdirectorios (`/{lang}/`).
+> [!NOTE]
+> El primer idioma en `LANGUAGES` se sirve en la raíz (`/`), los demás en subdirectorios (`/{lang}/`).
 
 | Archivo | Descripción |
 |---------|-------------|

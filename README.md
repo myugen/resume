@@ -27,7 +27,8 @@ The project uses environment variables. Copy `.env.example` to `.env` for local 
 | `CV_NAME` | Name in slug format (e.g., `john-doe`) | `john-doe` |
 | `LANGUAGES` | Supported languages (comma-separated) | `en,es` |
 
-PDFs are generated as `{CV_NAME}_cv_{lang}.pdf`.
+> [!TIP]
+> PDFs are generated as `{CV_NAME}_cv_{lang}.pdf`.
 
 ## 📁 Structure
 
@@ -39,7 +40,8 @@ PDFs are generated as `{CV_NAME}_cv_{lang}.pdf`.
 
 ## 📦 Output
 
-The first language in `LANGUAGES` is served at root (`/`), others in subdirectories (`/{lang}/`).
+> [!NOTE]
+> The first language in `LANGUAGES` is served at root (`/`), others in subdirectories (`/{lang}/`).
 
 | File | Description |
 |------|-------------|
