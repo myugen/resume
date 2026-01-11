@@ -33,6 +33,19 @@
       "url": "https://leanmind.es",
       "startDate": "2025-02-01",
       "summary": "Liderazgo técnico de equipos y formación en prácticas de desarrollo. Impartición de formaciones sobre TDD, XP, Refactoring y desarrollo asistido por agentes IA.",
+      "keywords": [
+        "Liderazgo técnico",
+        "Mentoría",
+        "Team Building",
+        "XP",
+        "Coach técnico",
+        "Formación en TDD",
+        "Formación en Refactoring",
+        "Formación en Código Sostenible",
+        "Formación en Clean Architecture",
+        "Formación en DDD",
+        "Formación en Agentes IA"
+      ],
       "highlights": [
         "Liderazgo técnico de equipos de desarrollo",
         "Formaciones en TDD, XP, Refactoring y desarrollo con agentes IA",
@@ -47,6 +60,19 @@
       "startDate": "2022-01-01",
       "endDate": "2025-02-01",
       "summary": "Mentorización de equipos internos y externos en crecimiento técnico. Trabajo en proyectos internacionales en sectores marítimo y ciberseguridad. Contribución a mejoras de DevOps y CI/CD.",
+      "keywords": [
+        "TDD",
+        "Pair Programming",
+        "Clean Architecture",
+        "DDD",
+        "Kotlin",
+        "Spring",
+        "React",
+        "Jenkins",
+        "JFrog",
+        "Helm",
+        "Desarrollo con agentes IA"
+      ],
       "highlights": [
         "Mentoring de más de 10 equipos en prácticas XP y Software Craftsmanship",
         "Proyectos internacionales en sectores marítimo y ciberseguridad",
@@ -59,6 +85,14 @@
       "startDate": "2021-05-01",
       "endDate": "2021-12-01",
       "summary": "Evolución de microservicios para gestión de métricas de producto. Mejora de procesos CI/CD.",
+      "keywords": [
+        "Go",
+        "Python",
+        "Django",
+        "FastAPI",
+        "Jenkins",
+        "Gitlab CI"
+      ],
       "highlights": [
         "Desarrollo de microservicios en Go y Python",
         "Mejora de pipelines CI/CD con Jenkins y Gitlab CI"
@@ -71,6 +105,18 @@
       "startDate": "2017-11-01",
       "endDate": "2021-05-01",
       "summary": "Liderazgo en desarrollo de software interno de reservas y gestión de eventos. Proyectos Open Data con ETL y datasets de administración pública. Modernización de aplicaciones del sector público.",
+      "keywords": [
+        "Go",
+        "React",
+        "Postgres",
+        "Java",
+        "Spring",
+        "Pentaho",
+        "Angular",
+        "Gitlab CI",
+        "Kubernetes",
+        "Maven Archetypes"
+      ],
       "highlights": [
         "Desarrollo de software de reservas y gestión de eventos",
         "Proyectos Open Data con ETL y datos de administración pública",
@@ -83,6 +129,13 @@
       "startDate": "2016-05-01",
       "endDate": "2017-11-01",
       "summary": "Mantenimiento y evolución de software para cliente del sector oil & gas.",
+      "keywords": [
+        "Java",
+        "Spring",
+        "Javascript",
+        "Oracle",
+        "PL/SQL"
+      ],
       "highlights": [
         "Desarrollo con Java, Spring y Oracle",
         "Mantenimiento de aplicaciones enterprise"
@@ -94,6 +147,11 @@
       "startDate": "2016-03-01",
       "endDate": "2016-05-01",
       "summary": "Participación en desarrollo de proyectos de formación.",
+      "keywords": [
+        "Java",
+        "Spring",
+        "Primefaces"
+      ],
       "highlights": [
         "Desarrollo con Java, Spring y Primefaces"
       ]
@@ -250,11 +308,22 @@
   "interests": [
     {
       "name": "Barista casero",
-      "keywords": ["V60", "Aeropress", "Espresso", "Cold Brew"]
+      "keywords": [
+        "V60",
+        "Aeropress",
+        "Espresso",
+        "Cold Brew"
+      ]
     },
     {
       "name": "Libros técnicos",
-      "keywords": ["The Pragmatic Programmer", "Clean Code", "Domain Modeling Made Functional", "Código Sostenible", "Desarrollo Ágil con TDD"]
+      "keywords": [
+        "The Pragmatic Programmer",
+        "Clean Code",
+        "Domain Modeling Made Functional",
+        "Código Sostenible",
+        "Desarrollo Ágil con TDD"
+      ]
     },
     {
       "name": "Viajar"

@@ -33,6 +33,19 @@
       "url": "https://leanmind.es",
       "startDate": "2025-02-01",
       "summary": "Technical leadership of teams and training in development practices. Delivering training on TDD, XP, Refactoring and AI-assisted development.",
+      "keywords": [
+        "Technical leadership",
+        "Mentorship",
+        "Team Building",
+        "XP",
+        "Coach technical",
+        "Training in TDD",
+        "Training in Refactoring",
+        "Training in Sustainable Code",
+        "Training in Clean Architecture",
+        "Training in DDD",
+        "Training in AI agents"
+      ],
       "highlights": [
         "Technical leadership of development teams",
         "Training in TDD, XP, Refactoring and AI agent-assisted development",
@@ -47,6 +60,19 @@
       "startDate": "2022-01-01",
       "endDate": "2025-02-01",
       "summary": "Mentoring internal and external teams in technical growth. Working on international projects in maritime and cybersecurity sectors. Contributing to DevOps and CI/CD improvements.",
+      "keywords": [
+        "TDD",
+        "Pair Programming",
+        "Clean Architecture",
+        "DDD",
+        "Kotlin",
+        "Spring",
+        "React",
+        "Jenkins",
+        "JFrog",
+        "Helm",
+        "AI agents driven development"
+      ],
       "highlights": [
         "Mentored 10+ development teams in XP and Software Craftsmanship practices",
         "International projects in maritime and cybersecurity sectors",
@@ -59,6 +85,14 @@
       "startDate": "2021-05-01",
       "endDate": "2021-12-01",
       "summary": "Evolution of microservices for product metrics management. CI/CD process improvements.",
+      "keywords": [
+        "Go",
+        "Python",
+        "Protobuf",
+        "Helm",
+        "Jenkins",
+        "Gitlab CI"
+      ],
       "highlights": [
         "Microservices development in Go and Python",
         "CI/CD pipeline improvements with Jenkins and GitLab CI"
@@ -71,6 +105,18 @@
       "startDate": "2017-11-01",
       "endDate": "2021-05-01",
       "summary": "Leading development of internal booking and event management software. Open Data projects with ETL and public administration datasets. Modernization of public sector applications.",
+      "keywords": [
+        "Go",
+        "React",
+        "Postgres",
+        "Java",
+        "Spring",
+        "Pentaho",
+        "Angular",
+        "Gitlab CI",
+        "Kubernetes",
+        "Maven Archetypes"
+      ],
       "highlights": [
         "Development of booking and event management software",
         "Open Data projects with ETL and public administration data",
@@ -83,6 +129,13 @@
       "startDate": "2016-05-01",
       "endDate": "2017-11-01",
       "summary": "Maintenance and evolution of software for oil & gas sector client.",
+      "keywords": [
+        "Java",
+        "Spring",
+        "Javascript",
+        "Oracle",
+        "PL/SQL"
+      ],
       "highlights": [
         "Development with Java, Spring and Oracle",
         "Enterprise application maintenance"
@@ -94,6 +147,11 @@
       "startDate": "2016-03-01",
       "endDate": "2016-05-01",
       "summary": "Participation in training project development.",
+      "keywords": [
+        "Java",
+        "Spring",
+        "Primefaces"
+      ],
       "highlights": [
         "Development with Java, Spring and Primefaces"
       ]
@@ -250,11 +308,22 @@
   "interests": [
     {
       "name": "Home Barista",
-      "keywords": ["V60", "Aeropress", "Espresso", "Cold Brew"]
+      "keywords": [
+        "V60",
+        "Aeropress",
+        "Espresso",
+        "Cold Brew"
+      ]
     },
     {
       "name": "Technical Books",
-      "keywords": ["The Pragmatic Programmer", "Clean Code", "Domain Modeling Made Functional", "Código Sostenible", "Desarrollo Ágil con TDD"]
+      "keywords": [
+        "The Pragmatic Programmer",
+        "Clean Code",
+        "Domain Modeling Made Functional",
+        "Código Sostenible",
+        "Desarrollo Ágil con TDD"
+      ]
     },
     {
       "name": "Travel"
