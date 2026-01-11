@@ -62,7 +62,6 @@ function getExportButtonHTML(pdfName, jsonName) {
   <div class="export-dropdown">
     <button class="export-btn" onclick="toggleDropdown()">Export</button>
     <div class="export-menu" id="exportMenu">
-      <button onclick="window.print()">Print / Save as PDF</button>
       <a href="${pdfName}" download>Download PDF</a>
       <a href="${jsonName}" download>Download JSON</a>
     </div>
