@@ -1,10 +1,10 @@
-# Resume
+# 📄 Resume
 
 *[Read in English](README.md)*
 
 CV en formato [JSON Resume](https://jsonresume.org/) con soporte multiidioma y despliegue automático a GitHub Pages.
 
-## Desarrollo local
+## 💻 Desarrollo local
 
 ```bash
 # Instalar dependencias
@@ -17,7 +17,7 @@ npm run serve
 npm run build
 ```
 
-## Configuración
+## ⚙️ Configuración
 
 El proyecto usa variables de entorno. Copia `.env.example` a `.env` para desarrollo local:
 
@@ -29,7 +29,7 @@ El proyecto usa variables de entorno. Copia `.env.example` a `.env` para desarro
 
 Los PDFs se generan como `{CV_NAME}_cv_{lang}.pdf`.
 
-## Estructura
+## 📁 Estructura
 
 | Archivo | Descripción |
 |---------|-------------|
@@ -37,18 +37,18 @@ Los PDFs se generan como `{CV_NAME}_cv_{lang}.pdf`.
 | `resume.{lang}.json` | CV en el idioma especificado |
 | `.env.example` | Ejemplo de configuración |
 
-## Output
+## 📦 Output
 
 El primer idioma en `LANGUAGES` se sirve en la raíz (`/`), los demás en subdirectorios (`/{lang}/`).
 
 | Archivo | Descripción |
 |---------|-------------|
 | `dist/index.html` | HTML del idioma por defecto |
-| `dist/{author}_cv_{lang}.pdf` | PDF del idioma por defecto |
+| `dist/{name}_cv_{lang}.pdf` | PDF del idioma por defecto |
 | `dist/content.json` | JSON del idioma por defecto |
 | `dist/{lang}/...` | Archivos de otros idiomas |
 
-## Comandos
+## 🛠️ Comandos
 
 | Comando | Descripción |
 |---------|-------------|
@@ -58,7 +58,7 @@ El primer idioma en `LANGUAGES` se sirve en la raíz (`/`), los demás en subdir
 | `npm run build:pdf` | Genera PDF para todos los idiomas |
 | `npm run build:json` | Copia JSON para todos los idiomas |
 
-## Personalizar para tu fork
+## 🍴 Personalizar para tu fork
 
 1. Crea tus archivos `resume.{lang}.json`
 2. Configura las variables en GitHub:
@@ -77,6 +77,10 @@ El primer idioma en `LANGUAGES` se sirve en la raíz (`/`), los demás en subdir
 
 4. Haz push y GitHub Pages se desplegará automáticamente
 
-## Despliegue
+## 🚀 Despliegue
 
 El CV se despliega automáticamente a GitHub Pages cuando se hace push a `main` con cambios en `resume.*.json`, `config.js` o `scripts/`.
+
+## 📜 Licencia
+
+[MIT](LICENSE)

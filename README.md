@@ -1,10 +1,10 @@
-# Resume
+# 📄 Resume
 
 *[Leer en español](README_es.md)*
 
 CV in [JSON Resume](https://jsonresume.org/) format with multilingual support and automatic deployment to GitHub Pages.
 
-## Local Development
+## 💻 Local Development
 
 ```bash
 # Install dependencies
@@ -17,7 +17,7 @@ npm run serve
 npm run build
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 The project uses environment variables. Copy `.env.example` to `.env` for local development:
 
@@ -29,7 +29,7 @@ The project uses environment variables. Copy `.env.example` to `.env` for local 
 
 PDFs are generated as `{CV_NAME}_cv_{lang}.pdf`.
 
-## Structure
+## 📁 Structure
 
 | File | Description |
 |------|-------------|
@@ -37,7 +37,7 @@ PDFs are generated as `{CV_NAME}_cv_{lang}.pdf`.
 | `resume.{lang}.json` | CV in the specified language |
 | `.env.example` | Configuration example |
 
-## Output
+## 📦 Output
 
 The first language in `LANGUAGES` is served at root (`/`), others in subdirectories (`/{lang}/`).
 
@@ -48,7 +48,7 @@ The first language in `LANGUAGES` is served at root (`/`), others in subdirector
 | `dist/content.json` | Default language JSON |
 | `dist/{lang}/...` | Other language files |
 
-## Commands
+## 🛠️ Commands
 
 | Command | Description |
 |---------|-------------|
@@ -58,7 +58,7 @@ The first language in `LANGUAGES` is served at root (`/`), others in subdirector
 | `npm run build:pdf` | Generate PDF for all languages |
 | `npm run build:json` | Copy JSON for all languages |
 
-## Customize for Your Fork
+## 🍴 Customize for Your Fork
 
 1. Create your `resume.{lang}.json` files
 2. Configure variables in GitHub:
@@ -77,6 +77,10 @@ The first language in `LANGUAGES` is served at root (`/`), others in subdirector
 
 4. Push and GitHub Pages will deploy automatically
 
-## Deployment
+## 🚀 Deployment
 
 The CV deploys automatically to GitHub Pages when pushing to `main` with changes in `resume.*.json`, `config.js`, or `scripts/`.
+
+## 📜 License
+
+[MIT](LICENSE)
