@@ -21,10 +21,10 @@ npm run serve
 
 ## Output
 
-| Idioma | HTML | PDF |
-|--------|------|-----|
-| EN | `dist/index.html` | `dist/miguel-cabrera_cv_en.pdf` |
-| ES | `dist/es/index.html` | `dist/es/miguel-cabrera_cv_es.pdf` |
+| Idioma | HTML | PDF | JSON |
+|--------|------|-----|------|
+| EN | `dist/index.html` | `dist/miguel-cabrera_cv_en.pdf` | `dist/content.json` |
+| ES | `dist/es/index.html` | `dist/es/miguel-cabrera_cv_es.pdf` | `dist/es/content.json` |
 
 ## Comandos
 
@@ -35,8 +35,9 @@ npm run serve
 | `npm run build:html:en` | Genera solo HTML en inglés |
 | `npm run build:html:es` | Genera solo HTML en español |
 | `npm run build:pdf` | Genera PDF para ambos idiomas |
-| `npm run build:pdf:en` | Genera solo PDF en inglés |
-| `npm run build:pdf:es` | Genera solo PDF en español |
+| `npm run build:json` | Copia JSON para ambos idiomas |
+| `npm run build:json:en` | Copia solo JSON en inglés |
+| `npm run build:json:es` | Copia solo JSON en español |
 
 ## Despliegue
 

@@ -20,6 +20,9 @@ npm run build:html
 
 # Build PDF output
 npm run build:pdf
+
+# Build JSON output (for export)
+npm run build:json
 ```
 
 ## Architecture
@@ -29,11 +32,13 @@ npm run build:pdf
 - **dist/**: Build output directory:
   - `dist/index.html` - English HTML
   - `dist/miguel-cabrera_cv_en.pdf` - English PDF
+  - `dist/content.json` - English JSON (for export)
   - `dist/es/index.html` - Spanish HTML
   - `dist/es/miguel-cabrera_cv_es.pdf` - Spanish PDF
+  - `dist/es/content.json` - Spanish JSON (for export)
 - **scripts/inject-controls.js**: Post-build script that injects language switcher and export button.
+- **scripts/build-pdf.js**: Custom Puppeteer script for PDF generation (with CI-compatible flags).
 - **Theme**: Uses `jsonresume-theme-dev-ats` for rendering (ATS-friendly theme).
-- **puppeteer**: Used for PDF generation.
 
 ## Node Version
 
