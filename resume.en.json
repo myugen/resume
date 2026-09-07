@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Miguel Ignacio Cabrera San Gil",
-    "label": "Lead Software Developer",
+    "label": "Senior Software Engineer",
     "image": "",
     "email": "miguelcabsan@gmail.com",
     "url": "https://myugen.dev",
-    "summary": "Software Developer with 9+ years of experience. Passionate about new technologies, I help teams adopt eXtreme Programming and Software Craftsmanship practices. Specialized in technical training and AI-assisted development.",
+    "summary": "Senior Software Engineer with 10+ years of experience. I design and lead end-to-end solutions that combine architecture, software, and technical coordination for complex products and platforms. Passionate about new technologies, I help teams adopt eXtreme Programming and Software Craftsmanship practices.",
     "location": {
       "city": "Santa Cruz de Tenerife",
       "countryCode": "ES",
@@ -27,11 +27,35 @@
   },
   "work": [
     {
+      "name": "Fever",
+      "location": "Remote, Spain",
+      "position": "Senior Software Engineer (L5)",
+      "url": "https://feverup.com/",
+      "startDate": "2026-07-01",
+      "summary": "Leading initiatives and designing end-to-end solutions to onboard a strategic client into Game Centers, a new Fever vertical. Defining vertical and cross-cutting solutions that combine architectural decisions, implementation, and coordination beyond code.",
+      "keywords": [
+        "Agentic Development",
+        "Python",
+        "Django",
+        "FastAPI",
+        "DDD",
+        "XP",
+        "Testing",
+        "Telemetry"
+      ],
+      "highlights": [
+        "Technical leadership for the end-to-end onboarding of a strategic client into Game Centers",
+        "Designing vertical and cross-cutting solutions to integrate a new business area into the Fever ecosystem",
+        "Applying DDD, XP, testing, telemetry, and Agentic Development to evolve reliable systems"
+      ]
+    },
+    {
       "name": "Lean Mind",
       "location": "Santa Cruz de Tenerife, Spain",
       "position": "Lead Software Developer & Technical Consultant",
       "url": "https://leanmind.es",
       "startDate": "2025-02-01",
+      "endDate": "2026-07-01",
       "summary": "Technical leadership of teams and training in development practices. Delivering training on TDD, XP, Refactoring and AI-assisted development.",
       "keywords": [
         "Technical leadership",
@@ -331,6 +355,6 @@
   ],
   "meta": {
     "version": "v1.0.0",
-    "lastModified": "2025-01-09"
+    "lastModified": "2026-09-07"
   }
 }

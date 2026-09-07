@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Miguel Ignacio Cabrera San Gil",
-    "label": "Lead Software Developer",
+    "label": "Senior Software Engineer",
     "image": "",
     "email": "miguelcabsan@gmail.com",
     "url": "https://myugen.dev",
-    "summary": "Desarrollador de software con más de 9 años de experiencia. Apasionado de las nuevas tecnologías, ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship. Especializado en formación técnica y desarrollo asistido por IA.",
+    "summary": "Senior Software Engineer con más de 10 años de experiencia. Diseño y lidero soluciones end-to-end que combinan arquitectura, software y coordinación técnica para productos y plataformas complejas. Apasionado de las nuevas tecnologías, ayudo a equipos a adoptar prácticas de eXtreme Programming y Software Craftsmanship.",
     "location": {
       "city": "Santa Cruz de Tenerife",
       "countryCode": "ES",
@@ -27,11 +27,35 @@
   },
   "work": [
     {
+      "name": "Fever",
+      "location": "Remote, Spain",
+      "position": "Senior Software Engineer (L5)",
+      "url": "https://feverup.com/",
+      "startDate": "2026-07-01",
+      "summary": "Impulso iniciativas y diseño soluciones end-to-end para incorporar un cliente estratégico en Game Centers, una nueva vertical de Fever. Defino soluciones verticales y transversales que combinan decisiones arquitectónicas, implementación y coordinación más allá del código.",
+      "keywords": [
+        "Agentic Development",
+        "Python",
+        "Django",
+        "FastAPI",
+        "DDD",
+        "XP",
+        "Testing",
+        "Telemetría"
+      ],
+      "highlights": [
+        "Liderazgo técnico de la incorporación end-to-end de un cliente estratégico en Game Centers",
+        "Diseño de soluciones verticales y transversales para integrar una nueva área en el ecosistema de Fever",
+        "Aplicación de DDD, XP, testing, telemetría y Agentic Development para evolucionar sistemas fiables"
+      ]
+    },
+    {
       "name": "Lean Mind",
       "location": "Santa Cruz de Tenerife, Spain",
       "position": "Lead Software Developer & Technical Consultant",
       "url": "https://leanmind.es",
       "startDate": "2025-02-01",
+      "endDate": "2026-07-01",
       "summary": "Liderazgo técnico de equipos y formación en prácticas de desarrollo. Impartición de formaciones sobre TDD, XP, Refactoring y desarrollo asistido por agentes IA.",
       "keywords": [
         "Liderazgo técnico",
@@ -331,6 +355,6 @@
   ],
   "meta": {
     "version": "v1.0.0",
-    "lastModified": "2025-01-09"
+    "lastModified": "2026-09-07"
   }
 }
