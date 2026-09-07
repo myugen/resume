@@ -35,6 +35,3 @@ coverage/
 # Dotenv
 .env*
 !.env.example
-
-# Claude Code
-.claude/
